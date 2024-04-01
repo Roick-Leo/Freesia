@@ -68,7 +68,7 @@ samtools index /path/to/output_sorted.bam
 mkdir -p /path/to/hppy_output_dir
 hap.py \
 /path/to/benchmark/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz \
-/path/to/LRAPmut/Final_merged.vcf.gz \
+/path/to/Freesia/Freesia_out.vcf.gz \
 -f /path/to/benchmark/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed \
 -r /path/to/reference/hg38_noalt_withrandom/hg38.fa \
 -o /path/to/hppy_output_dir \
