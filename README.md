@@ -39,14 +39,14 @@ g++ -std=c++11 -shared -fPIC -o debruijn_graph -O3 debruijn_graph.cpp -I ${CONDA
 ## General Usage
 ```
 ./lrapmut.bin \
-    --env_dir ${The_bin_dir_of_Freesia_conda_env} \
-    --dnb_bam_fn ${DNB_BAM} \
-    --cyclone_bam_fn ${CYCLONE_bam} \
-    --ref_fn ${REF} \
-    --threads ${THREADS} \ 
-    --model_path ${MODEL_DIR} \
-    --output ${OUTPUT_DIR} \
-    --longreads_region ${LONGREADS_BED}
+    --env_dir ${The_bin_dir_of_Freesia_conda_env} \     # the bin dir of freesia environment
+    --dnb_bam_fn ${DNB_BAM} \                           # the sorted bam file of DNB-seq with index
+    --cyclone_bam_fn ${CYCLONE_bam} \                   # the sorted bam file of Cyclone with index
+    --ref_fn ${REF} \                                   # the path to refrence file
+    --threads ${THREADS} \                              # thr threads num
+    --model_path ${MODEL_DIR} \                         # the path to model
+    --output ${OUTPUT_DIR} \                            # the path to output dir
+    --longreads_region ${LONGREADS_BED}                 # the path to bed file where is available in the project document
 ```
 
 ## Demo
